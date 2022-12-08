@@ -1,0 +1,197 @@
+/*Classes/IDs! */    
+
+
+.phils {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    max-height: 100vh;
+    justify-content: center;
+      text-align: center;
+    
+     padding:10px;
+     font-family: georgia, serif;
+                   
+  }
+
+/*index.html Image Borders!!! */
+ .phils img {
+    margin: 10px;
+    border: 3px solid #000;
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+    max-width: 23vw;
+  }
+             
+   
+
+/*Linkies back to index.html!!! */
+        .link {
+            text-align: center;
+            padding: 10px;
+            font-size: 1em;
+            }
+            
+
+            
+         /*   .mail{
+                padding:20px;    
+                color:darkblue;
+                font-family: arial, sans-serif;
+                break-before: auto;
+                float:left;
+                font-size:100%;
+                text-align: center;
+                justify-content: center;
+                background-color:lightcoral;
+            }
+            
+          /*      #par {
+                    line-height: 200%;
+                    color:skyblue;
+                    padding:10px;
+                    font-family: georgia, serif;
+                     font-size: 150%;
+                    text-align: center;
+                }  */
+
+
+ .page {
+                  
+                    border: 1px solid black;
+                    background-color: ghostwhite;
+            
+     
+      align-items: center;
+      flex-direction: row;
+    
+      justify-content: center;
+      text-align: center; 
+    
+}
+            
+  .page div{margin:10px 30px;
+            flex-grow:2;
+            flex-shrink:1;
+            flex-basis:20px;
+           }
+            
+            .page a {
+                    text-decoration: none;
+                    font-weight: bold;
+                    padding:20px;
+                    break-after: auto;
+                    text-align: left; 
+}
+
+.page p {  margin-left:200px;
+           margin-right:200px;}
+
+
+
+
+
+
+body{background-color:lightcoral;
+font-family: verdana, sans-serif;
+                    padding: 30px;}    
+
+  h1, h2, h3 {
+                color: skyblue;    
+                margin: 0px;   
+                }
+                
+     
+                      h1{
+                    font-size: 400%;
+                    font-family: georgia, times, serif;
+                    text-shadow: 2px 2px 2px #666666;
+                   padding:10px;
+                    color:azure;
+                    text-align: center;
+                }
+                
+                h2 { padding: 10px;
+                    font-size: 150%;
+                }
+    
+               
+             
+                p {
+                    line-height: 200%;
+                    color:darkblue;
+                    padding:10px;
+                }
+* {
+                box-sizing: border-box;
+                font-family: verdana, arial, sans-serif;
+            }
+        
+button {color:lightcoral;
+        font-size: 28px;
+        }
+label {color: darkblue;
+     align-content: flex-start;
+      font-size:20px;}
+
+
+/*NavvvBAR CSS */
+
+            nav
+            {display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    background-color:lightcoral;
+    justify-content: space-around;
+                min-height: height:12px;
+            
+            }
+            
+
+
+            nav div{margin:10px 30px;
+            flex-grow:2;
+            flex-shrink:1;
+            flex-basis:20px;
+           background-color:cornflowerblue;
+           justify-content: center;
+      text-align: center;
+      }
+            
+           nav a {
+            display: block;
+            text-decoration: none;
+            color: darkblue;
+            font-size: 1em;
+                font-weight: bold;
+                    padding:20px;
+                    break-after: auto;
+                    text-align: center;
+            }
+            
+            nav a:link{
+                    color:darkblue;
+                    
+                }
+
+                nav a:visited {
+                color: darkblue;
+            }
+            nav a:hover {
+                background-color:lightcoral;
+                box-shadow: 1px 1px 2px black;
+                
+            }
+            nav a:active {
+                color: #e2bcbc;
+            }
+
+
+  
+
+
+
+
+        
+         

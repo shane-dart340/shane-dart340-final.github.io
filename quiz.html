@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<link rel="stylesheet" href="style.css">
+    
+<title>Trivia Quiz</title>
+
+<style>
+
+     
+    </style>
+             
+ 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"> </script>
+    
+    </head>
+    <body>
+    <!--Navigation Bar -->
+             <nav>
+      <div class="link"><a href="index.html">HOMEPAGE</a></div> <!-- Return to HOME  -->
+        <div class="link"><a href="favphils.html">Phillies Roster</a></div> <!-- 2022 Roster  -->
+        <div class="link"><a href="grid.html">Phillies History</a></div> <!-- Logos/Jerseys/Ballparks/ GOATs -->
+        <div class="link"><a href="quiz.html">Trivia Quiz!</a></div>  <!-- Trivia Quiz JS JQ -->
+        </nav>
+        
+        <hr size="2" width="100%" />
+        <br size="6"/>
+        
+        
+        
+        <h1>How Much of a Phils Phan are You????</h1><br>
+        <div class="phils">
+        <img src="phanatic.jpeg" />
+            </div>
+        <br>
+       <h2 style="font-size: 150%;
+                    font-family: georgia, times, serif;
+                    text-shadow: 2px 2px 2px #666666;
+                   padding:10px;
+                    color:azure;
+                    text-align: center;">put yourself to the ultimate test, take this all-new Phillies trivia quiz NOW</h2>
+        <br><br>
+        
+        <div class="page">
+      
+        
+        
+       
+       
+       
+       <!-- Question 1 -->
+       
+        <form id="cont1">
+           <br><br><br>
+           <h3 style="font-size: 150%; align-content: flex-start; padding: 50px; ">Who holds the record for the most homeruns in PHILLIES history??? <br>(HRs with other teams don't count)</h3>
+            <br> <br> 
+            
+            
+            
+            <input type="radio" id="schmiddy" value="schmiddy" name="q1"> 
+             <label for="schmiddy">Mike Schmidt</label> <br>
+             
+             <input type="radio" id="howard" value="howard" name="q1">
+             <label for="howard">Ryan Howard</label> <br> 
+             
+             <input type="radio" id="harper" value="harper" name="q1"> 
+             <label for="harper">Bryce Harper</label> <br>
+          
+            <input type="radio" id="ruf" value="ruf" name="q1"> 
+             <label for="ruf">Darin Ruf</label>
+                 
+            <br><br>
+            <button type="sumbit">Submit</button>
+     
+        </form>
+             <div id="answer"> </div>
+            
+        <form id="cont2">
+           
+           <h3 id="ans2">What other MLB team was also previoulsy based in Philadelphia along with the Phillies, in which the two clashed for several decades?</h3>
+       <br> <br> 
+             <input type="radio" id="expos" value="expos" name="q2"> 
+             <label for="expos">Montreal Expos</label> <br>
+             
+             <input type="radio" id="mariners" value="mariners" name="q2">
+             <label for="mariners">Seattle Mariners</label> <br>
+             
+             <input type="radio" id="athletics" value="athletics" name="q2"> 
+             <label for="athletics">Oakland Athletics</label> <br>
+           
+            <input type="radio" id="dodgers" value="dodgers" name="q2"> 
+             <label for="dodgers">Los Angeles Dodgers</label> <br>
+          
+                 <br><br>
+               <button type="sumbit">Submit</button>
+                   
+        </form>
+        <div id="answer"> </div>
+      
+        <form id="cont3">
+           
+           <h3 id="ans3">When the ballclub was first established, what were they initially named? (hint: not the Phillies)</h3>
+       <br> <br> 
+             <input type="radio" id="phila" value="phila" name="q3"> 
+             <label for="phila">Philadelphians</label> <br>
+             
+             <input type="radio" id="quakers" value="quakers" name="q3">
+             <label for="quakers">Quakers</label> <br>
+             
+             <input type="radio" id="browns" value="browns" name="q3"> 
+             <label for="browns">Browns</label> <br>
+           
+            <input type="radio" id="as" value="as" name="q3"> 
+             <label for="as">Athletics</label> <br>
+          
+                 <br><br>
+               <button type="sumbit">Submit</button>
+                   
+        </form>
+       <div id="answer"> </div>
+       
+       
+           <form id="cont4">
+           
+           <h3 id="ans4">Which Phillies pitcher threw a perfect game on May 29 2010 against the Florida Marlins, becoming only the second Phillie to ever throw a perfect game in franchise history? </h3>
+       <br> <br> 
+             <input type="radio" id="oswalt" value="oswalt" name="q4"> 
+             <label for="oswalt">Roy Oswalt</label> <br>
+             
+             <input type="radio" id="lee" value="lee" name="q4">
+             <label for="lee">Cliff Lee </label> <br>
+             
+             <input type="radio" id="halladay" value="halladay" name="q4"> 
+             <label for="halladay">Roy Halladay </label> <br>
+           
+            <input type="radio" id="blanton" value="blanton" name="q4"> 
+             <label for="blanton">Joe Blanton</label> <br>
+          
+                 <br><br>
+               <button type="sumbit">Submit</button>
+                   
+        </form>
+       
+            <form id="cont5">
+           
+           <h3 id="ans5">Nicknamed “The Bull”, who is the former Phillies player who owns a restaurant named Bulls BBQ located inside of Citizens Bank Park, where his famous BBQ cuisine is loved by Phils fans?</h3>
+       <br> <br> 
+             <input type="radio" id="vic" value="vic" name="q5"> 
+             <label for="vic">Shane Victorino</label> <br>
+             
+             <input type="radio" id="rose" value="rose" name="q5">
+             <label for="rose">Pete Rose</label> <br>
+             
+             <input type="radio" id="dykstra" value="dykstra" name="q5"> 
+             <label for="dykstra">Lenny Dykstra</label> <br>
+           
+            <input type="radio" id="luzinski" value="luzinski" name="q5"> 
+             <label for="luzinski">Greg Luzinski</label> <br>
+          
+                 <br><br>
+               <button type="sumbit">Submit</button>
+                   
+        </form>
+        
+        
+        
+        <div id="zero">
+                 <h3>Leave this Page and dont come back</h3><br>
+        <h3>Score: 0/5</h3><br><br>
+    <div class="link"><a href="quiz.html">Restart Quiz</a></div> 
+            </div>
+        
+        <div id="twenty">
+              <h3>Pretty bad, but not a 0</h3><br>
+        <h3>Score: 1/5</h3>
+            <br><br>
+    <div class="link"><a href="quiz.html">Restart Quiz</a></div> 
+            </div>
+            
+               <div id="fourty">
+              <h3>Bad but not the worst.</h3><br>
+        <h3>Score: 2/5</h3>
+            <br><br>
+    <div class="link"><a href="quiz.html">Restart Quiz</a></div> </div>
+            
+               <div id="sixty">
+              <h3>Mediocre AF.</h3><br>
+        <h3>Score: 3/5</h3>
+            <br><br>
+    <div class="link"><a href="quiz.html">Restart Quiz</a></div> </div>
+            
+               <div id="eighty">
+              <h3>Pretty good, you know your stuff!</h3><br>
+        <h3>Score: 4/5</h3>
+            <br><br>
+    <div class="link"><a href="quiz.html">Restart Quiz</a></div> </div>
+            
+               <div id="hundo">
+              <h3>100%! You are the ultimate Phils Phan. Congrats!</h3><br>
+        <h3>Score: 5/5</h3>
+            <br><br>
+    <div class="link"><a href="quiz.html">Restart Quiz</a></div> </div>
+        
+        
+        
+        </div>
+  
+        <!--Question 1 Script -->   
+       <script>
+           
+           
+      
+           
+           
+            // Points SYSTEM
+          let pts = 0; 
+          
+         //Q1
+          $("#schmiddy").on("click", function(){
+              
+            pts = pts +1; 
+            console.log(pts);
+              
+          }  );
+         
+          $("#howard").on("click", function(){
+              
+            pts = pts +0; 
+            console.log(pts);
+              
+          }  );
+          
+           $("#harper").on("click", function(){
+              
+            pts = pts +0; 
+            console.log(pts);
+              
+          }  );
+          
+           $("#ruf").on("click", function(){
+              
+            pts = pts +0; 
+            console.log(pts);
+              
+          }  );
+          
+      //Q2
+              $("#expos").on("click", function(){
+              
+            pts = pts +0; 
+            console.log(pts);
+              
+          }  );
+         
+          $("#mariners").on("click", function(){
+              
+            pts = pts +0; 
+            console.log(pts);
+              
+          }  );
+          
+           $("#athletics").on("click", function(){
+              
+            pts = pts +1; 
+            console.log(pts);
+              
+          }  );
+          
+           $("#dodgers").on("click", function(){
+              
+            pts = pts +0; 
+            console.log(pts);
+              
+          }  );
+          
+         //Q3
+          
+              $("#phila").on("click", function(){
+              
+            pts = pts +0; 
+            console.log(pts);
+              
+          }  );
+         
+          $("#quakers").on("click", function(){
+              
+            pts = pts +1; 
+            console.log(pts);
+              
+          }  );
+          
+           $("#browns").on("click", function(){
+              
+            pts = pts +0; 
+            console.log(pts);
+              
+          }  );
+          
+           $("#as").on("click", function(){
+              
+            pts = pts +0; 
+            console.log(pts);
+              
+          }  );
+          //Question 4
+              $("#oswalt").on("click", function(){
+              
+            pts = pts +0; 
+            console.log(pts);
+              
+          }  );
+         
+          $("#lee").on("click", function(){
+              
+            pts = pts +0; 
+            console.log(pts);
+              
+          }  );
+          
+           $("#halladay").on("click", function(){
+              
+            pts = pts +1; 
+            console.log(pts);
+              
+          }  );
+          
+           $("#blanton").on("click", function(){
+              
+            pts = pts +0; 
+            console.log(pts);
+              
+          }  );
+          
+          //Q5
+                 $("#vic").on("click", function(){
+              
+            pts = pts +0; 
+            console.log(pts);
+              
+          }  );
+         
+          $("#rose").on("click", function(){
+              
+            pts = pts +0; 
+            console.log(pts);
+              
+          }  );
+          
+           $("#dykstra").on("click", function(){
+              
+            pts = pts +0; 
+            console.log(pts);
+              
+          }  );
+          
+           $("#luzinski").on("click", function(){
+              
+            pts = pts +1; 
+            console.log(pts);
+              
+          }  );
+           
+           
+              
+            $("#cont2").hide();
+            $("#cont3").hide();
+            $("#cont4").hide();
+            $("#cont5").hide();
+           
+           $("#zero").hide();
+          $("#twenty").hide();
+          $("#fourty").hide();
+          $("#sixty").hide();
+           $("#eighty").hide();
+          $("#hundo").hide();
+           
+           
+                 let images = {
+               
+            "schmiddy": "mike-schmidt-quiz.jpeg", 
+            "howard" :"fans.jpeg" ,
+            "harper":"phanatic.jpeg" ,
+            "ruf": "fans.jpeg" ,
+            
+          "athletics":"as.png",
+                     
+           }
+                 
+          $("#cont1").on("submit", function(event) {
+    	      event.preventDefault();
+    	      let answer = $("input").serializeArray();
+             $.each(answer, function( i, field) {
+                 console.log(field.value);
+                 if (field.value === 'schmiddy') {
+                     
+                     $("#cont1").hide();
+                     
+        	           $("#answer").text("Correct, You got it! That's right, Michael Jack Schmidt with 584 homeruns as a Phillie, the only team he ever played for! A record that may never be beaten.");
+                   
+              $("<img>").add("src", images[answer]).appendTo("#answer")
+              $("<button>").attr("type", "submit").text("Next Question").appendTo("#answer");
+              $("button").on("click", function() {
+                  
+                $("#cont2").show();
+                    $("#answer").empty();
+                  
+                 }); }
+                             
+                             else {
+                      $("#cont1").hide();
+              
+              $("#answer").text("WRONG. *Philly Boos* ... and You Call Yourself a Phillies Phan?")   
+                          
+             $("<img>").add("src", images[answer]).appendTo("#answer")
+              $("<button>").attr("type", "submit").text("Next Question").appendTo("#answer");
+              $("button").on("click", function() {
+                  
+                $("#cont2").show();
+                    $("#answer").empty();
+                //  image.clear
+              //   button.clear
+    	             })
+            };
+             });
+          });
+           
+      //Question 2 Script!     
+       
+           $("#cont2").on("submit", function(event) {
+    	      event.preventDefault();
+    	      let answer = $("input").serializeArray();
+             $.each(answer, function( i, field) {
+                 console.log(field.value);
+                 if (field.value === 'athletics') {
+                     
+                     $("#cont2").hide();
+                     
+        	           $("#answer").text("It was indeed the Oakland Athletics, who ruled Philadelphia baseball from 1901-1954, until reloacating to Kansas City, and ultimately to Oakland where they are currently based out of. They won 9 AL Pennants and 5 World Series victories throughout their Philadelphia reign.");
+              $("<img>").attr("src", images[answer]).appendTo("#answer")
+              $("<button>").attr("type", "submit").text("Next Question").appendTo("#answer");
+              $("button").on("click", function() {
+                  
+                $("#cont3").show();
+                    $("#answer").empty();
+                  
+                 }); }
+                             
+                             else {
+                      $("#cont2").hide();
+              
+              $("#answer").text("This was an easier question, looks like you're in for a tough time here...")                
+              $("<img>").attr("src", images[answer]).appendTo("#answer")
+          $("<button>").attr("type", "submit").text("Next Question").appendTo("#answer");
+              $("button").on("click", function() {
+                  $("#cont3").show();
+                  $("#answer").empty();
+                //  image.clear
+              //   button.clear
+    	             })
+            };
+             });
+          });    
+           
+    
+           
+              //Question3 Script!     
+       
+           $("#cont3").on("submit", function(event) {
+    	      event.preventDefault();
+    	      let answer = $("input").serializeArray();
+             $.each(answer, function( i, field) {
+                 console.log(field.value);
+                 if (field.value === 'quakers') {
+                     
+                     $("#cont3").hide();
+                     $("#cont2").hide();
+                     
+                     
+        	           $("#answer").text("Just like Billy Penn, the Phillies were initially known as the Quakers, how bout that.");
+              $("<img>").attr("src", images[answer]).appendTo("#answer")
+              $("<button>").attr("type", "submit").text("Next Question").appendTo("#answer");
+              $("button").on("click", function() {
+                  
+                $("#cont4").show();
+                    $("#answer").empty();
+                  
+                 }); }
+                             
+                             else {
+                                 
+                      $("#cont3").hide();
+                    $("#cont2").hide();
+              
+              $("#answer").text("That was a trickier question, I understand that you got it wrong. ")                
+              $("<img>").attr("src", images[answer]).appendTo("#answer")
+          $("<button>").attr("type", "submit").text("Next Question").appendTo("#answer");
+              $("button").on("click", function() {
+                  $("#cont4").show();
+                  $("#answer").empty();
+                //  image.clear
+              //   button.clear
+    	             })
+            };
+             });
+          });    
+           
+                 //Question 4 Script!     
+       
+           $("#cont4").on("submit", function(event) {
+    	      event.preventDefault();
+    	      let answer = $("input").serializeArray();
+             $.each(answer, function( i, field) {
+                 console.log(field.value);
+                 if (field.value === 'halladay') {
+                     
+                      $("#cont2").hide();
+                      $("#cont3").hide();
+                      $("#cont4").hide();
+                 
+                     
+        	           $("#answer").text("The late, great Roy Halladay was that guy! RIP to a Phillies legend. So glad I had the pleasure to watch him growing up");
+              $("<img>").attr("src", images[answer]).appendTo("#answer")
+              $("<button>").attr("type", "submit").text("Next Question").appendTo("#answer");
+              $("button").on("click", function() {
+                  
+                $("#cont5").show();
+                    $("#answer").empty();
+                  
+                 }); }
+                             
+                             else {
+                                 
+                      $("#cont2").hide();
+                      $("#cont3").hide();
+                      $("#cont4").hide();
+              
+              $("#answer").text("How dare you not know this? You must be too young, I'm so sorry")                
+              $("<img>").attr("src", images[answer]).appendTo("#answer")
+          $("<button>").attr("type", "submit").text("Next Question").appendTo("#answer");
+              $("button").on("click", function() {
+                  $("#cont5").show();
+                  $("#answer").empty();
+                //  image.clear
+              //   button.clear
+    	             })
+            };
+             });
+          });    
+           
+           
+               //Question 5 Script!     
+       
+           $("#cont5").on("submit", function(event) {
+    	      event.preventDefault();
+    	      let answer = $("input").serializeArray();
+             $.each(answer, function( i, field) {
+                 console.log(field.value);
+                 if (field.value === 'luzinski') {
+                     
+                      $("#cont2").hide();
+                      $("#cont3").hide();
+                      $("#cont4").hide();
+                      $("#cont5").hide();
+                     
+        	           $("#answer").text("The Bull is the man, he always is hanging out at his BBQ joint to talk to fans and sign autographs! What a guy! If you like BBQ food, check his place out next time you go to the Phils game.");
+            $("<img>").attr("src", images[answer]).appendTo("#answer")
+          $("<button>").attr("type", "submit").text("Finish Quiz").appendTo("#answer");
+            $("button").on("click", finalscenes);                     
+              $("button").on("click", function() {
+                //  $("finalscenes").show();
+                  $("button").on("click", finalscenes);
+                  $("#answer").empty();
+                  
+                 }); }
+                             
+                             else {
+                                 
+                      $("#cont2").hide();
+                      $("#cont3").hide();
+                      $("#cont4").hide();
+                      $("#cont5").hide();
+              
+              $("#answer").text("Fair enough. Way to not get this one right. At least you tried")                
+              $("<img>").attr("src", images[answer]).appendTo("#answer")
+          $("<button>").attr("type", "submit").text("Finish Quiz").appendTo("#answer");
+            $("button").on("click", finalscenes);                     
+              $("button").on("click", function() {
+                //  $("finalscenes").show();
+                  $("button").on("click", finalscenes);
+                  $("#answer").empty();
+                //  image.clear
+              //   button.clear
+    	             })
+            };
+             });
+          }); 
+           
+           
+           
+           
+           
+           
+           
+               //Final Scenes point distribution
+    let finalscenes = function(){
+        
+         $("#cont5").hide();
+        $("button").on("click", finalscenes);
+        // $("button").on("click", scene1)
+        
+        if ( pts === 0 ){
+            
+           $("#zero").show();
+            
+            
+        }    else if (pts === 1){
+            
+             $("#twenty").show();
+            
+        } else if (pts === 2 ){
+            
+               $("#fourty").show();
+            
+        } else if (pts === 3 ){
+            
+               $("#sixty").show();
+            
+        }else if (pts === 4 ){
+            
+               $("#eighty").show();
+            
+        }else {
+            
+            
+            $("#hundo").show();
+            
+        } 
+    };
+     
+           
+       //    $("#cont1").on("submit", function(event){
+        //    event.preventDefault();
+        //    let answer= $("#howard").val();
+        //    console.log(answer);
+         //   if (answer === 'schmiddy'){
+              
+          //     $("#cont1").hide();
+           
+       //       $("#answer").text("Correct, You got it! That's right, Michael Jack Schmidt with 584 homeruns as a Phillie, the only team he  ever played for! A record that may never be beaten.")
+         //     $("<img>").attr("src", images[answer]).appendTo("#answer")
+         //     $("<button>").attr("type", "submit").text("Next Question").appendTo("#answer");
+         //     $("button").on("click", function() {
+         //       $("#cont2").show();
+          //          $("#answer").empty();
+                  //image.clear
+               //   button.clear
+      //        });              
+     //     } else {
+              
+    //          $("#cont1").hide();
+              
+   //           $("#answer").text("WRONG. *Philly Boos* ... and You Call Yourself a Phillies Phan?")
+   //           $("<img>").attr("src", images[answer]).appendTo("#answer")
+   //       $("<button>").attr("type", "submit").text("Next Question").appendTo("#answer");
+       //       $("button").on("click", function() {
+        //          $("#cont2").show();
+         //         $("#answer").empty();
+                  //image.clear
+               //   button.clear
+              
+         // });
+          
+       //   }
+       //    });
+           
+      
+       </script>
+       
+     
+       
+       
+     
+    
+    </body>
+    
+</html>
